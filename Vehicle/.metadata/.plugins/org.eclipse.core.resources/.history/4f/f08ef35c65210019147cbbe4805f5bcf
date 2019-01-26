@@ -1,0 +1,98 @@
+package com.vms;
+
+import java.io.IOException;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Customer_Update
+ */
+public class Customer_Update extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	public String customerName="connection";
+	private String customerEmail;
+	private String customerJob;
+	java.sql.Connection con=null;
+	private String customerAddress;
+	private String gender;
+	private String dobMonth;
+	private java.sql.Statement stmt; 
+	private String customerId;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Customer_Update() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		try{
+			Class.forName("com.mysql.jdbc.Driver"); 
+			con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/vehicle","root","");
+			//from data
+			customerName = request.getParameter("customerName");
+			customerEmail = request.getParameter("customerEmail");
+			customerJob = request.getParameter("customerJob");
+			gender = request.getParameter("gender");
+			customerAddress = request.getParameter("customerAddress");
+			customerId = request.getParameter("customerId");
+			
+			stmt=con.createStatement();
+			String Str="UPDATE Customer SET customer_name="+customerName+",customer_job="+customerJob+",customer_email="+customerEmail+
+					",customer_gender="+gender+",customer_address="+customerAddress;
+			System.out.println("Customer Insert======"+Str);
+			int result=stmt.executeUpdate(Str);
+			if(result<0){
+				RequestDispatcher rd = request.getRequestDispatcher("/customer-add.jsp");
+				rd.forward(request, response);
+			}else{
+				RequestDispatcher rd = request.getRequestDispatcher("/customer-list.jsp");
+				rd.forward(request, response);
+			}
+			}catch(Exception e){
+				System.out.println("Exception ======="+e);
+				System.out.println("Exception ======="+e.getStackTrace());
+			}finally {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+	}
+	
+	public String populateCustomer() throws SQLException, ClassNotFoundException{
+		Class.forName("com.mysql.jdbc.Driver"); 
+		con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/vehicle","root","");  
+		String Str="<option value='0'>Customer Name</option>";
+		stmt=con.createStatement();
+		ResultSet result=stmt.executeQuery("SELECT customer_id,customer_name FROM customer");
+		while(result.next()){
+			Str+="<option value="+result.getString("customer_id")+">"+result.getString("customer_name")+"</option>";
+		}
+		return Str;
+	}
+
+}

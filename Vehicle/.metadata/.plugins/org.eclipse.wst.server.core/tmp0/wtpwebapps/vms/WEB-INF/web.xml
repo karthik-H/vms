@@ -46,6 +46,12 @@
   	<description></description>
   	<servlet-class>com.vms.Contact_Delete</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Customer_Update</servlet-name>
+  	<display-name>Customer_Update</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Customer_Update</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Contact_Add</servlet-name>
   	<url-pattern>/Contact_Add</url-pattern>
@@ -73,6 +79,10 @@
   <servlet-mapping>
   	<servlet-name>Contact_Delete</servlet-name>
   	<url-pattern>/Contact_Delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Customer_Update</servlet-name>
+  	<url-pattern>/Customer_Update</url-pattern>
   </servlet-mapping>
     <welcome-file-list>
     <welcome-file>home.jsp</welcome-file>

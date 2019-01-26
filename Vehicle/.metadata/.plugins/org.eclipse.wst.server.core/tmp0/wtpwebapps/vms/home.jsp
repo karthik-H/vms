@@ -42,6 +42,7 @@ li a:hover:not(.active) {
 <li><a href="contact-add.jsp">contact Add</a></li>
 <li><a href="enquiry-delete.jsp">enquiry delete</a></li>
 <li><a href="contact-delete.jsp">contact delete</a></li>
+<li><a href="customer-update.jsp">customer update</a></li>
 </ul>
 </body>
 </html>
