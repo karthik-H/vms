@@ -99,7 +99,7 @@ select:focus {
 		<div class="header_top">
 			<div class="top_right">
 				<ul>
-					<li><a href="logout.jsp">Logout</a></li>						
+					<li><a href="login.jsp">Logout</a></li>						
 				</ul>
 			</div>
 			<div class="clearfix"> </div>

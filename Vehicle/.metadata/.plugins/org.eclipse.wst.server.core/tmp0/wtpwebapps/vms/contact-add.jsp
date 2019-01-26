@@ -16,6 +16,7 @@
 <div class="container">
  <button onclick='location.href="index.jsp";' class="w3-button w3-black" >Home</button>
   <button onclick='location.href="customer-list.jsp";' class="w3-button w3-black" >Customer List</button>
+     <form method="post" action="Contact_Add">
     <div class="row">
       <h4>Contact Details</h4>
  <div class="input-group input-group-icon">
