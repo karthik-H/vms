@@ -1,0 +1,57 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Contact_Add</servlet-name>
+  	<display-name>Contact_Add</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Contact_Add</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Customer_Add</servlet-name>
+  	<display-name>Customer_Add</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Customer_Add</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Customer_List</servlet-name>
+  	<display-name>Customer_List</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Customer_List</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Enquiry_Add</servlet-name>
+  	<display-name>Enquiry_Add</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Enquiry_Add</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Enquiry_List</servlet-name>
+  	<display-name>Enquiry_List</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Enquiry_List</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Contact_Add</servlet-name>
+  	<url-pattern>/Contact_Add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Customer_Add</servlet-name>
+  	<url-pattern>/Customer_Add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Customer_List</servlet-name>
+  	<url-pattern>/Customer_List</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Enquiry_Add</servlet-name>
+  	<url-pattern>/Enquiry_Add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Enquiry_List</servlet-name>
+  	<url-pattern>/Enquiry_List</url-pattern>
+  </servlet-mapping>
+</web-app>
