@@ -8,12 +8,13 @@
   <title>Enquery Details</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <div class="container">
-<a href="home.jsp">Home</a>
-    <a href="customer-add.jsp">Customer Add</a>
+ <button onclick='location.href="index.jsp";' class="w3-button w3-black" >Home</button>
+  <button onclick='location.href="contact-add.jsp";' class="w3-button w3-black" >Contact Add</button>
   <form method="post" action="Enquiry_Add">
     <div class="row">
       <h4>Enquery Add</h4>

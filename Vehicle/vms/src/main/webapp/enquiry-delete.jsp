@@ -9,7 +9,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel='stylesheet prefetch' href='css/font-awesome.min.css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>Enquiry delete</title>
 <style>
 table {
@@ -30,8 +31,8 @@ tr:nth-child(even) {
 </style>
 </head>
 <body>
-<a href="home.jsp">Home</a>
-<a href="enquiry-add.jsp">Enquery Add</a>
+ <button onclick='location.href="index.jsp";' class="w3-button w3-black" >Home</button>
+ <button onclick='location.href="enquiry-add.jsp";' class="w3-button w3-black" >Enquiry Add</button>
 </br>
 <h1>Delete Query</h1>
 </br>

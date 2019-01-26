@@ -8,7 +8,8 @@
 <title>Contact Delete</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel='stylesheet prefetch' href='css/font-awesome.min.css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
 table {
     font-family: arial, sans-serif;
@@ -28,8 +29,8 @@ tr:nth-child(even) {
 </style>
 </head>
 <body>
-<a href="home.jsp">Home</a>
-<a href="contact-add.jsp">Contact Add</a>
+ <button onclick='location.href="index.jsp";' class="w3-button w3-black" >Home</button>
+  <button onclick='location.href="contact-add.jsp";' class="w3-button w3-black" >Contact Add</button>
 </br>
 <h1>Contact delete</h1>
 </br>

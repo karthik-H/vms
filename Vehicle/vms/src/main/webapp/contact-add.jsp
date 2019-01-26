@@ -5,16 +5,17 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <title>Contact Add</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel='stylesheet prefetch' href='css/font-awesome.min.css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
 <div class="container">
-<a href="home.jsp">Home</a>
-  <form method="post" action="Contact_Add">
+ <button onclick='location.href="index.jsp";' class="w3-button w3-black" >Home</button>
+  <button onclick='location.href="customer-list.jsp";' class="w3-button w3-black" >Customer List</button>
     <div class="row">
       <h4>Contact Details</h4>
  <div class="input-group input-group-icon">
@@ -40,9 +41,6 @@
        <div class="input-group input-group-icon">
        <input type="submit" value="add" />
       </div>
-    </div>
-	 </div>
-    </div>
   </form>
 </div>
   <script src='js/jquery.js'></script>

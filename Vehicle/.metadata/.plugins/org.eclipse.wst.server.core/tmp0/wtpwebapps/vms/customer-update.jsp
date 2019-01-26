@@ -8,11 +8,12 @@
   <title>Contact update</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel='stylesheet' href='css/font-awesome.min.css'>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <div class="container">
-<a href="home.jsp">Home</a>
+ <button onclick='location.href="index.jsp";' class="w3-button w3-black" >Home</button>
   <form method="post" action="Customer_Update">
  <div class="row">
    <div class="input-group input-group-icon"> 
