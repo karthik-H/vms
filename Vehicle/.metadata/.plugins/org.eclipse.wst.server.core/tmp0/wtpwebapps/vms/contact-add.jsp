@@ -18,6 +18,7 @@
     <div class="row">
       <h4>Contact Details</h4>
  <div class="input-group input-group-icon">
+
 	   <select name="customerId"><%=mybean1.populateCustomer() %></select>
       </div>
       <div class="input-group input-group-icon">

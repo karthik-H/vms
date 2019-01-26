@@ -40,6 +40,12 @@
   	<description></description>
   	<servlet-class>com.vms.Enquiry_Delete</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Contact_Delete</servlet-name>
+  	<display-name>Contact_Delete</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Contact_Delete</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Contact_Add</servlet-name>
   	<url-pattern>/Contact_Add</url-pattern>
@@ -63,6 +69,10 @@
   <servlet-mapping>
   	<servlet-name>Enquiry_Delete</servlet-name>
   	<url-pattern>/Enquiry_Delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Contact_Delete</servlet-name>
+  	<url-pattern>/Contact_Delete</url-pattern>
   </servlet-mapping>
     <welcome-file-list>
     <welcome-file>home.jsp</welcome-file>

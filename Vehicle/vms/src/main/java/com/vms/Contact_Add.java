@@ -90,7 +90,7 @@ public class Contact_Add extends HttpServlet {
 	public String populateCustomer() throws SQLException, ClassNotFoundException{
 		Class.forName("com.mysql.jdbc.Driver"); 
 		con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/vehicle","root","");  
-		String Str="<option value='0'>Select</option>";
+		String Str="<option value='0'>Customer Name</option>";
 		stmt=con.createStatement();
 		ResultSet result=stmt.executeQuery("SELECT customer_id,customer_name FROM customer");
 		while(result.next()){
