@@ -5,7 +5,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Customer List</title>
 <head>
 <style>
 table {
@@ -27,8 +28,8 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<a href="home.jsp">Home</a>
-<a href="enquiry-add.jsp">Enquery Add</a>
+ <button onclick='location.href="index.jsp";' class="w3-button w3-black" >Home</button>
+ <button onclick='location.href="enquiry-add.jsp";' class="w3-button w3-black" >Enquiry Add</button>
 </br>
 </br>
 <table>

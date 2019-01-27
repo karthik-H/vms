@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<jsp:useBean id="mybean1" class="com.vms.Customer_Update" scope="request" />
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>Contact update</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel='stylesheet' href='css/font-awesome.min.css'>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<a href="home.jsp">Home</a>
+  <form method="post" action="Customer_Add">
+ <div class="row">
+   <div class="input-group input-group-icon">
+	   <select name="customerId"><%=mybean1.populateCustomer() %></select>
+      </div>
+      <h4>Customer Details</h4>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Customer Name" name="customerName"/>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="email" placeholder="Email Adress" name="customerEmail"/>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Job" name="customerJob"/>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Address" name="customerAddress"/>
+      </div>
+      <div class="col-half">
+        <div class="input-group">
+          <input type="radio" name="gender" value="male" id="gender-male" name="gender"/>
+          <label for="gender-male">Male</label>
+          <input type="radio" name="gender" value="female" id="gender-female" name="gender"/>
+          <label for="gender-female">Female</label>
+        </div>
+      </div>
+      </div>
+       <div class="input-group input-group-icon">
+       <input type="submit" value="add" />
+      </div>
+    </div>
+	 </div>
+    </div>
+  </form>
+</div>
+  <script src='js/jquery.js'></script>
+    <script  src="js/index.js"></script>
+</body>
+</html>

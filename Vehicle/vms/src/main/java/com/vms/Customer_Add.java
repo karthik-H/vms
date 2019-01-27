@@ -22,7 +22,6 @@ public class Customer_Add extends HttpServlet {
 	java.sql.Connection con=null;
 	private String customerAddress;
 	private String gender;
-	private String dobMonth;
 	private java.sql.Statement stmt;  
 	
     /**

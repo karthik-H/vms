@@ -40,6 +40,30 @@
   	<description></description>
   	<servlet-class>com.vms.Enquiry_Delete</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Contact_Delete</servlet-name>
+  	<display-name>Contact_Delete</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Contact_Delete</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Customer_Update</servlet-name>
+  	<display-name>Customer_Update</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Customer_Update</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+  	<display-name>Register</display-name>
+  	<description></description>
+  	<servlet-class>com.vms.Register</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Contact_Add</servlet-name>
   	<url-pattern>/Contact_Add</url-pattern>
@@ -64,7 +88,23 @@
   	<servlet-name>Enquiry_Delete</servlet-name>
   	<url-pattern>/Enquiry_Delete</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Contact_Delete</servlet-name>
+  	<url-pattern>/Contact_Delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Customer_Update</servlet-name>
+  	<url-pattern>/Customer_Update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
     <welcome-file-list>
-    <welcome-file>home.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
 </web-app>
