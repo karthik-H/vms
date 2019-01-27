@@ -195,8 +195,9 @@ legend {
 		<div class="header_top">
 			<div class="top_right">
 				<ul>
-					<li><a href="signup.jsp">Register an Account</a></li>
-					<li><a href="login.jsp">Login Please</a></li>				
+					<li><a href="register.jsp">Register an Account</a></li>
+					<li><a href="login.jsp">Login Please</a></li>	
+					<li><a href="index.jsp">Home</a></li>			
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -208,7 +209,7 @@ legend {
 	<div class="header">
 	  <div class="head-t">
 		 <div class="logo">
-			  <a href="index.php"><h1>Vehicle <span>Management</span></h1> </a>
+			  <a href="index.jsp"><h1>Vehicle <span>Management</span></h1> </a>
 		  </div>
 		  <div class="header_right">
 			<div class="cart box_1">
@@ -225,7 +226,7 @@ legend {
 </div>
 </div>
 
-<h4> contact number : +91 *********</h4>
+<h4> contact number : +91 0909090900</h4>
 <br>
 <h4>Email id : abc@host.com</h4>
 </body>

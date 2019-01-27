@@ -28,7 +28,7 @@
        <select name="contactId"><%=mybean1.populateContact() %></select>
       </div>
       <div class="row">
-      <h5>Company name</h5>
+      <h5>Model name</h5>
       </div>
 	   <div class="input-group input-group-icon">
 	   <select name="itemId"><%=mybean1.populateItem() %></select>
